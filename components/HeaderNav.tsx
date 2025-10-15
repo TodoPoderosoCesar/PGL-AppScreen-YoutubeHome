@@ -7,7 +7,7 @@ export default function HeaderNav() {
     return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.headerNav}>
         <Pressable style={styles.firstButton} onPress={() => alert('Tampoco te flipes')}>
-            <Ionicons name="compass-outline" size={35} color="white" style={styles.buttonIcon}/>
+            <Ionicons name="compass-outline" size={30} color="white" style={styles.buttonIcon}/>
         </Pressable>
 
         <Pressable style={styles.button} onPress={() => alert('Tampoco te flipes')}>

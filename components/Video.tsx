@@ -11,16 +11,16 @@ type VideoProps = {
 
 const Video: React.FC<VideoProps> = (props: VideoProps): React.ReactNode => {
 
-    const {title, creator, views, updated, videoSource} = props
+  const {title, creator, views, updated, videoSource} = props
 
-    return (
-    <View>
-        <Image source={videoSource} />
-        <Text style={{color: '#fff'}}>{title}</Text>
-        <Text style={{color: '#fff'}}>{creator}</Text>
-        <Text style={{color: '#fff'}}>{views} views - {updated}</Text>
-    </View>
-    )
+  return (
+  <View>
+      <Image source={videoSource} />
+      <Text style={{color: '#fff'}}>{title}</Text>
+      <Text style={{color: '#fff'}}>{creator}</Text>
+      <Text style={{color: '#fff'}}>{views}M views - {updated}</Text>
+  </View>
+  )
 }
 
 export default Video

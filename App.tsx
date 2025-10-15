@@ -23,7 +23,16 @@ export default function App() {
         <HeaderNav />
       </View>
       <View style={styles.body}>
+        <Video/>
+        {/* <View style={styles.videos}>
 
+        </View>
+        <View style={styles.shorts}>
+          
+        </View>
+        <View style={styles.videos}>
+
+        </View> */}
       </View>
       <View style={styles.footer}>
               
