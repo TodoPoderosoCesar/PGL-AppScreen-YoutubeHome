@@ -1,11 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.header}>
+        <View style={styles.headerContainter}>
+          <Image style={styles.logo} source={require('./assets/youtube-icon.png')}/>
+        </View>
+      </View>
+      <View style={styles.body}>
+
+      </View>
+      <View style={styles.footer}>
+
+      </View>
     </View>
   );
 }
@@ -13,8 +23,30 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+  },
+  header: {
+    flex: 2,
+    backgroundColor: '#0f0f0f',
+  },
+  body: {
+    flex: 14,
+    backgroundColor: '#1f1f1f',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  footer: {
+    flex: 1,
+    backgroundColor: '#0f0f0f',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    resizeMode: 'contain',
+  },
+  headerContainter: {
+    marginLeft: 20,
+    marginTop: 30,
   },
 });
