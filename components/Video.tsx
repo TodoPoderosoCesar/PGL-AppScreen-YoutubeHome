@@ -14,16 +14,17 @@ const Video: React.FC<VideoProps> = (props: VideoProps): React.ReactNode => {
     const {title, creator, views, updated, videoSource} = props
 
     return (
-        <View style={styles.videoContainer}>
-            
-        </View>
+    <View>
+        <Image source={videoSource} />
+        <Text style={{color: '#fff'}}>{title}</Text>
+        <Text style={{color: '#fff'}}>{creator}</Text>
+        <Text style={{color: '#fff'}}>{views} views - {updated}</Text>
+    </View>
     )
 }
 
 export default Video
 
 const styles = StyleSheet.create({ 
-    videoContainer: {
-        
-    }
+    
 })
