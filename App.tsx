@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Image, ScrollView, Pressable } from 'react-nati
 import HeaderNav from './components/HeaderNav';
 import Video from './components/Video';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import Footer from './components/TabBar';
 
 export default function App() {
   return (
@@ -25,7 +26,7 @@ export default function App() {
 
       </View>
       <View style={styles.footer}>
-
+              
       </View>
     </View>
   );
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    flex: 3,
+    flex: 3.3,
     backgroundColor: '#0f0f0f',
   },
   headerTitle: {
@@ -58,12 +59,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  footer: {
-    flex: 1,
-    backgroundColor: '#0f0f0f',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   logo: {
     width: 100,
     height: 100,
@@ -74,5 +69,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row', 
     justifyContent: 'flex-end', 
     alignItems: 'center',
+  },
+  footer: {
+    flex: 2,
+    backgroundColor: '#0f0f0f',
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
