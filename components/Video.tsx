@@ -1,5 +1,6 @@
 import { StyleSheet, Image, ImageSourcePropType, Text, View, Button, Pressable, ScrollView, Alert } from 'react-native'
 import React from 'react'
+import { Ionicons } from '@expo/vector-icons'
 
 type VideoProps = {
   title: string,
@@ -16,9 +17,19 @@ const Video: React.FC<VideoProps> = (props: VideoProps): React.ReactNode => {
   return (
   <View style={styles.container}>
     <Image source={videoSource} style={styles.video}/>
-    <Text style={styles.title}>{title}</Text>
-    <Text style={styles.creator}>{creator}</Text>
-    <Text style={styles.views}>{views}M views - {updated}</Text>
+    <View>
+
+      <View style={styles.userTitle}>
+        <Ionicons name="person-circle-outline" size={35} color="white" style={{paddingLeft: 5, paddingRight: 10}}/>
+        <Text style={styles.title}>{title}</Text>
+      </View>
+
+      <View style={{flexDirection: 'row', paddingLeft: 50,}}>
+        <Text style={styles.creator}>{creator}</Text>
+        <Text style={styles.views}>{views}M views - {updated}</Text>
+      </View>
+
+    </View>
   </View>
   )
 }
@@ -35,14 +46,32 @@ const styles = StyleSheet.create({
   video: {
     resizeMode: 'contain',
     width: 'auto',
+    height: 305,
   }, 
+  userTitle: {
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    paddingTop: 5, 
+    paddingBottom: 5, 
+    paddingRight: 10, 
+    paddingLeft: 10
+  },
   title: {
+    color: '#fff',
+    fontWeight: 'bold',
+    paddingTop: 10,
+    paddingBottom: 5,
+    paddingRight: 10,
+    paddingLeft: 10,
+    fontSize: 24,
   },
   creator: {
     color: 'gray',
+    paddingLeft: 20,
   },
   views: {
     color: 'gray',
     paddingBottom: 10,
+    paddingLeft: 10,
   }
 })

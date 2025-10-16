@@ -33,15 +33,9 @@ export default function App() {
             updated={VIDEO_DATA[0].updated}
             videoSource={VIDEO_DATA[0].videoSource}
           />
-          {/* <View style={styles.videos}>
+          <ScrollView showsHorizontalScrollIndicator={false}>
 
-          </View>
-          <View style={styles.shorts}>
-            
-          </View>
-          <View style={styles.videos}>
-
-          </View> */}
+          </ScrollView>
         </ScrollView>
       </View>
       <View style={styles.footer}>
