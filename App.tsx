@@ -7,6 +7,8 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import Footer from './components/TabBar';
 import TabBar from './components/TabBar';
 import { VIDEO_DATA } from './data/video-data';
+import Short from './components/Short';
+import { SHORT_DATA } from './data/shorts-data';
 
 export default function App() {
   return (
@@ -33,9 +35,32 @@ export default function App() {
             updated={VIDEO_DATA[0].updated}
             videoSource={VIDEO_DATA[0].videoSource}
           />
-          <ScrollView showsHorizontalScrollIndicator={false}>
-
+          <View style={{flexDirection: 'row', alignItems: 'center', marginLeft: 10, marginTop: 20, marginBottom: 10}}>
+            <Ionicons name="sparkles-outline" size={40} color="white" style={{textAlign: 'center'}}/>
+            <Text style={{color: 'white', fontWeight: 'bold', fontSize: 20, marginLeft: 10, marginBottom: 10}}>Shorts</Text>
+          </View>
+          <ScrollView showsHorizontalScrollIndicator={false} horizontal>
+            {
+            SHORT_DATA.map((ShortItem) => (
+              <Short 
+                videoSource={ShortItem.videoSource}
+              />
+            ))}
           </ScrollView>
+          <Video
+            title={VIDEO_DATA[0].title}
+            creator={VIDEO_DATA[0].creator}
+            views={VIDEO_DATA[0].views}
+            updated={VIDEO_DATA[0].updated}
+            videoSource={VIDEO_DATA[0].videoSource}
+          />
+          <Video
+            title={VIDEO_DATA[0].title}
+            creator={VIDEO_DATA[0].creator}
+            views={VIDEO_DATA[0].views}
+            updated={VIDEO_DATA[0].updated}
+            videoSource={VIDEO_DATA[0].videoSource}
+          />
         </ScrollView>
       </View>
       <View style={styles.footer}>

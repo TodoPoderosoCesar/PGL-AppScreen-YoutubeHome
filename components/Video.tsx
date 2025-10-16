@@ -41,12 +41,16 @@ const styles = StyleSheet.create({
     width: '100%',
     // backgroundColor: '#fff',
     // alignItems: 'flex-start',
-    padding: 0
+    padding: 0,
+    paddingBottom: 10,
   },
   video: {
     resizeMode: 'contain',
     width: 'auto',
-    height: 305,
+    height: 295,
+    borderRadius: 20,
+    marginRight: 10,
+    marginLeft: 10,
   }, 
   userTitle: {
     flexDirection: 'row', 
