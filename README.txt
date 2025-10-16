@@ -22,8 +22,8 @@ dando datos del short, y una vez mas las imagenes usadas son otras.
 Por ultimo, el tabBar o el menú de abajo del todo no está bien centrado y los iconos usados no son
 los mismo que los de la app.
 
-Clica [aquí](./docs/imagenApp) si quieres ver la captura de la APP proporcionada por el profesor.
-Clica [aquí](./docs/imagenPro) si quieres ver la captura del proyecto.
+Clica [aquí](./docs/10_youtube_home.jpeg) si quieres ver la captura de la APP proporcionada por el profesor.
+Clica [aquí](./docs/imagenPro.png) si quieres ver la captura del proyecto.
 
 ##  Menú de Clases
 
