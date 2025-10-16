@@ -25,12 +25,18 @@ los mismo que los de la app.
 Clica [aquí](./docs/10_youtube_home.jpeg) si quieres ver la captura de la APP proporcionada por el profesor.
 Clica [aquí](./docs/imagenPro.png) si quieres ver la captura del proyecto.
 
-##  Menú de Clases
+##  Menú de Componentes
 
 Haz clic en el nombre de la clase para ver más detalles:
 
-- [GestorDeEmpleados](docs/GestorDeEmpleados.txt)
-- [Empleado](docs/Empleado.txt)
-- [Utilidades](docs/Utilidades.txt)
+- [HeaderNav.tsx](./components/HeaderNav.tsx) - Esta fichero carga un componente headernav que es el scroll horizontal debajo del header.
+- [Short.tsx](./components/Short.tsx) - Este fichero carga un scroll horizontal con una imagen.
+- [TabBar.tsx](./components/TabBar.txt) - Este fichero carga el componente entero dentro del footer.
+- [Video.tsx](./components/Video.txt) - Este fichero crea el componente video.
 
 ---
+
+## Autocrítica
+
+Considero que muchos componentes se pueden hacer de maneras mas optimizadas y mejor en general, por ejemplo tabbar en vez de ser un componente que repito 5 veces, es un componente estatico. Otro ejemplo seria en el mismo fichero app.tsx en el header hay mucha informacion que cargo que podria simplificar metiendo en otro fichero y cargandolo en el app.tsx.
+Considero por otro lado que en cuanto a lo visual se llega a asemejar bastante al resultado esperado pero le hace falta de más tiempo y cariño.
