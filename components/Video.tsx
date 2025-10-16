@@ -14,11 +14,11 @@ const Video: React.FC<VideoProps> = (props: VideoProps): React.ReactNode => {
   const {title, creator, views, updated, videoSource} = props
 
   return (
-  <View>
-      <Image source={videoSource} />
-      <Text style={{color: '#fff'}}>{title}</Text>
-      <Text style={{color: '#fff'}}>{creator}</Text>
-      <Text style={{color: '#fff'}}>{views}M views - {updated}</Text>
+  <View style={styles.container}>
+    <Image source={videoSource} style={styles.video}/>
+    <Text style={styles.title}>{title}</Text>
+    <Text style={styles.creator}>{creator}</Text>
+    <Text style={styles.views}>{views}M views - {updated}</Text>
   </View>
   )
 }
@@ -26,5 +26,23 @@ const Video: React.FC<VideoProps> = (props: VideoProps): React.ReactNode => {
 export default Video
 
 const styles = StyleSheet.create({ 
-    
+  container: {
+    width: '100%',
+    // backgroundColor: '#fff',
+    // alignItems: 'flex-start',
+    padding: 0
+  },
+  video: {
+    resizeMode: 'contain',
+    width: 'auto',
+  }, 
+  title: {
+  },
+  creator: {
+    color: 'gray',
+  },
+  views: {
+    color: 'gray',
+    paddingBottom: 10,
+  }
 })

@@ -6,6 +6,7 @@ import Video from './components/Video';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import Footer from './components/TabBar';
 import TabBar from './components/TabBar';
+import { VIDEO_DATA } from './data/video-data';
 
 export default function App() {
   return (
@@ -24,16 +25,24 @@ export default function App() {
         <HeaderNav />
       </View>
       <View style={styles.body}>
-        <Video/>
-        {/* <View style={styles.videos}>
+        <ScrollView style={styles.bodyScroll} showsVerticalScrollIndicator={false} contentContainerStyle={{ alignItems: 'flex-start' }}>
+          <Video
+            title={VIDEO_DATA[0].title}
+            creator={VIDEO_DATA[0].creator}
+            views={VIDEO_DATA[0].views}
+            updated={VIDEO_DATA[0].updated}
+            videoSource={VIDEO_DATA[0].videoSource}
+          />
+          {/* <View style={styles.videos}>
 
-        </View>
-        <View style={styles.shorts}>
-          
-        </View>
-        <View style={styles.videos}>
+          </View>
+          <View style={styles.shorts}>
+            
+          </View>
+          <View style={styles.videos}>
 
-        </View> */}
+          </View> */}
+        </ScrollView>
       </View>
       <View style={styles.footer}>
             <TabBar />  
@@ -68,6 +77,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#1f1f1f',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  bodyScroll: {
+    width: '100%',
   },
   logo: {
     width: 100,
