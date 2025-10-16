@@ -6,6 +6,6 @@ export const videoData: VideoItem[] = [
         creator: "César García",
         views: 23,
         updated: "2 days ago",
-        videoSource: require("../assets/video1.jpg")
+        videoSource: require("../assets/video.jpg")
     }
 ]
