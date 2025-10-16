@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <View style={styles.tabBar}>
-
+            
         </View>
     )
 }
